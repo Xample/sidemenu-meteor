@@ -10,14 +10,7 @@
       angular.bootstrap(document, ['starter']);
     });
 
-angular.module('starter', ['ionic', 'starter.controllers'])
-
-    // change the regular {{}} to [[]] to avoid conflicts with meteor
-.config(['$interpolateProvider',
-  function($interpolateProvider) {
-    $interpolateProvider.startSymbol('[[').endSymbol(']]');
-  }
-])
+angular.module('starter', ['angular-meteor','ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
