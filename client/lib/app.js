@@ -12,6 +12,13 @@
 
 angular.module('starter', ['ionic', 'starter.controllers'])
 
+    // change the regular {{}} to [[]] to avoid conflicts with meteor
+.config(['$interpolateProvider',
+  function($interpolateProvider) {
+    $interpolateProvider.startSymbol('[[').endSymbol(']]');
+  }
+])
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -26,7 +33,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider){
+
   $stateProvider
 
     .state('app', {
