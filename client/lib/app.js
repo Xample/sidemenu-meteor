@@ -10,7 +10,6 @@
       angular.bootstrap(document, ['starter']);
     });
 
-
 angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform) {

@@ -1,3 +1,6 @@
+
+
+
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
@@ -46,3 +49,6 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
+
+
+
