@@ -1,4 +1,3 @@
-<template name="menu.html">
 <ion-side-menus>
   <ion-side-menu-content>
     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
@@ -16,23 +15,16 @@
         <ion-item nav-clear menu-close ng-click="login()">
           Login
         </ion-item>
-        <a href="/#/app/search">
-        <ion-item nav-clear menu-close >
+        <ion-item nav-clear menu-close href="/#/app/search">
           Search
         </ion-item>
-        </a>
-        <a href="#/app/browse">
-        <ion-item nav-clear menu-close >
+        <ion-item nav-clear menu-close href="#/app/browse">
           Browse
         </ion-item>
-        </a>
-        <a href="#/app/playlists">
-        <ion-item nav-clear menu-close >
+        <ion-item nav-clear menu-close href="#/app/playlists">
           Playlists
         </ion-item>
-        </a>
       </ion-list>
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>
-</template>

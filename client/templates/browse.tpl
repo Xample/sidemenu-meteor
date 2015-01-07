@@ -1,10 +1,8 @@
-<template name="search.html">
-<ion-view title="Search">
+<ion-view title="Browse">
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    <h1>Search</h1>
+    <h1>Browse</h1>
   </ion-content>
 </ion-view>
-</template>

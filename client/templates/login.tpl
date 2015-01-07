@@ -1,4 +1,3 @@
-<template name="login.html">
 <div class="modal">
   <ion-header-bar>
     <h1 class="title">Login</h1>
@@ -24,4 +23,3 @@
     </form>
   </ion-content>
 </div>
-</template>
