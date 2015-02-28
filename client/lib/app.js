@@ -33,7 +33,7 @@ angular.module('starter', ['angular-meteor','ionic', 'starter.controllers'])
     .state('app', {
       url: "/app",
       abstract: true,
-      templateUrl:'client/templates/menu.tpl',
+      templateUrl:'client/templates/menu.ng.html',
       controller: 'AppCtrl'
     })
 
@@ -41,7 +41,7 @@ angular.module('starter', ['angular-meteor','ionic', 'starter.controllers'])
       url: "/search",
       views: {
         'menuContent' :{
-          templateUrl:'client/templates/search.tpl'
+          templateUrl:'client/templates/search.ng.html'
         }
       }
     })
@@ -50,7 +50,7 @@ angular.module('starter', ['angular-meteor','ionic', 'starter.controllers'])
       url: "/browse",
       views: {
         'menuContent' :{
-          templateUrl:'client/templates/browse.tpl',
+          templateUrl:'client/templates/browse.ng.html',
         }
       }
     })
@@ -58,7 +58,7 @@ angular.module('starter', ['angular-meteor','ionic', 'starter.controllers'])
       url: "/playlists",
       views: {
         'menuContent' :{
-          templateUrl:'client/templates/playlists.tpl',
+          templateUrl:'client/templates/playlists.ng.html',
           controller: 'PlaylistsCtrl'
         }
       }
@@ -68,7 +68,7 @@ angular.module('starter', ['angular-meteor','ionic', 'starter.controllers'])
       url: "/playlists/:playlistId",
       views: {
         'menuContent' :{
-          templateUrl:'client/templates/playlist.tpl',
+          templateUrl:'client/templates/playlist.ng.html',
           controller: 'PlaylistCtrl'
         }
       }
